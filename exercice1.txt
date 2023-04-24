@@ -1,0 +1,10 @@
+
+let est utilisé pour des variables de type bloc 
+var est pour des variables simples 
+    
+var s=(1/6 * 3/2)/(4/3 + 1/2)
+
+s
+0.13636363636363638
+
+  
