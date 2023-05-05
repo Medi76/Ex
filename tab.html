@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       var tab=[2,23,8,50,11,5,34,80,6];
+       
+       function comp(a,b){
+        return a - b
+       }
+       tab.sort(comp);
+       console.log(tab);
+        var max=tab[0];
+        var min=tab[0];
+        //maximum et minimum
+        for(let i=0;i<tab.length;i++){
+          if(tab[i]>max){
+            max=tab[i];
+          }else{
+            min=tab[i];
+          }
+        }
+          console.log(max);
+          console.log(min);
+//pair et impair
+        var p = tab.filter(tab => tab %2 ==0);
+        var imp = tab.filter(tab => tab %2 !==0);
+          console.log(p);
+          console.log(imp);
+        
+//objet cni avec des informations personnelles
+     let medi ={
+      nom:"GAHIMBARE",
+      prenom:"Marie Mediatrice",
+      pere:"MUSARAGANYI p. claver",
+      mere:"NIZIGAMA calinie",
+      date:"8-05-2002",
+      lieu_naissance:"nyakabiga",
+      etat_civil:"cel"
+     }
+
+     let a=function(){
+      console.log(medi.nom,medi.date)
+     }
+     a();
+
+     let b=function(){
+      console.log(medi.pere,medi.mere)
+     }
+     b();
+     for(i in tab){
+      console.log(i);//montre les iterations selon la longueur du tableau
+     }
+     for(i of tab){
+      console.log(i);//montre les valeurs du tableau qu'on a declaré
+     }
+    </script>
+</body>
+</html>
